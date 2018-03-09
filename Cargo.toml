@@ -1,0 +1,9 @@
+[package]
+name = "anyall"
+version = "0.1.0"
+authors = ["Henri Sivonen <hsivonen@hsivonen.fi>"]
+license = "CC0"
+
+[dependencies]
+simd = "0.2.1"
+stdsimd = { path = "../stdsimd/crates/stdsimd" }
