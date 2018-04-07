@@ -6,16 +6,16 @@
 extern crate stdsimd;
 extern crate simd;
 
-use stdsimd::simd::b8x16;
+use stdsimd::simd::m8x16;
 use simd::bool8ix16;
 
 #[no_mangle]
-pub fn stdsimd_any_8x16(b: b8x16) -> bool {
+pub fn stdsimd_any_8x16(b: m8x16) -> bool {
     b.any()
 }
 
 #[no_mangle]
-pub fn stdsimd_all_8x16(b: b8x16) -> bool {
+pub fn stdsimd_all_8x16(b: m8x16) -> bool {
     b.all()
 }
 
